@@ -1,0 +1,116 @@
+@font-face
+{
+    font-family: Intro Cond;
+    src: url('IntroCondLightFree.otf') format('opentype');
+}
+
+body
+{
+    font-family: 'Intro Cond';
+    background: #2d2d2d;
+}
+
+.button
+{
+    display: block;
+    cursor: pointer;
+    color: white;
+}
+
+.button:checked ~ .info
+{
+    display: block;
+    height: 800px;
+    width: 600px;
+}
+
+.button:checked ~ .info .inline
+{
+    display: none;
+}
+
+.button:checked ~ .info .list
+{
+    display: block;
+    position: absolute;
+    top: 545px;
+    font-size: 23px;
+    padding: 7px;
+}
+
+.button:checked ~ .info a
+{
+    bottom: 32%;
+}
+
+.button:checked ~ .info > .img_center
+{
+    height: 60%;
+    max-width: 100%;
+}
+
+.info
+{
+    display: inline-block;
+    position: relative;
+    width: 250px;
+    height: 400px;
+    margin: 20px;
+    border: 1px solid lightgrey;
+    color: dimgray;
+    border-radius: 8px;
+    background: rgb(157, 227, 226);
+}
+
+.info:hover
+{
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
+}
+
+.info a
+{
+    color: black;
+    text-decoration: none;
+    position: absolute;
+    font-size: 30px;
+    bottom: 28%;
+    padding: 7px;
+}
+
+.inline
+{
+    position: absolute;
+    bottom: 10%;
+    font-size: 16px;
+    padding: 7px;
+}
+
+.info .img_center
+{
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+}
+
+.img_center:hover
+{
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+
+.img_center
+{
+    overflow: hidden;
+    background-position: center center;
+    background-size: cover ;
+    background-repeat: no-repeat;
+    height: 60%;
+    margin: 5px;
+    border-radius: inherit;
+}
+
+.list
+{
+    display: none;
+}
