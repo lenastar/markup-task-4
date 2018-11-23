@@ -14,7 +14,7 @@ body
 {
     display: block;
     cursor: pointer;
-    color: white;
+    color: #fff;
 }
 
 .button:checked ~ .info
@@ -32,15 +32,8 @@ body
 .button:checked ~ .info .list
 {
     display: block;
-    position: absolute;
-    top: 545px;
     font-size: 23px;
     padding: 7px;
-}
-
-.button:checked ~ .info a
-{
-    bottom: 32%;
 }
 
 .button:checked ~ .info > .img_center
@@ -52,37 +45,49 @@ body
 .info
 {
     display: inline-block;
-    position: relative;
     width: 250px;
     height: 400px;
     margin: 20px;
-    border: 1px solid lightgrey;
-    color: dimgray;
+    border: 1px solid #d3d3d3;
+    color: #696969;
     border-radius: 8px;
-    background: rgb(157, 227, 226);
+    background: #9de3e2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 7px;
 }
 
 .info:hover
 {
-    box-shadow: 0 0 10px rgba(0,0,0,.5);
+    box-shadow: 0 0 10px #fff;
 }
 
 .info a
 {
-    color: black;
+    color: #000;
     text-decoration: none;
-    position: absolute;
     font-size: 30px;
-    bottom: 28%;
-    padding: 7px;
+    width: inherit;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    float: left;
+}
+
+.info a:hover
+{
+    font-weight: bold;
+    font-size: 2em;
 }
 
 .inline
 {
-    position: absolute;
-    bottom: 10%;
+    float: left;
     font-size: 16px;
-    padding: 7px;
+}
+
+.inline p
+{
+    margin: 0;
 }
 
 .info .img_center
@@ -106,7 +111,6 @@ body
     background-size: cover ;
     background-repeat: no-repeat;
     height: 60%;
-    margin: 5px;
     border-radius: inherit;
 }
 
@@ -115,52 +119,52 @@ body
     display: none;
 }
 
-.Eva
+.image_type_eva
 {
     background-image: url(https://pp.userapi.com/c851416/v851416202/36cb5/7hQPa1H_nxA.jpg);
 }
 
-.Tom
+.image_type_tom
 {
     background-image: url(https://pp.userapi.com/c845217/v845217226/f4713/0ids8-AkgwA.jpg);
 }
 
-.Salt
+.image_type_salt
 {
     background-image: url(https://pp.userapi.com/c834304/v834304508/b13af/hExBzMK8UJI.jpg);
 }
 
-.Patrik
+.image_type_patrik
 {
     background-image: url(https://pp.userapi.com/c840427/v840427638/8a176/gL6qApF1afs.jpg);
 }
 
-.Matroskin
+.image_type_matroskin
 {
     background-image: url(https://pp.userapi.com/c849532/v849532252/9a8bd/8QUCA2z17SQ.jpg);
 }
 
-.Malish
+.image_type_malish
 {
     background-image: url(https://pp.userapi.com/c845524/v845524957/104ad0/LYbklfe-jsU.jpg);
 }
 
-.Like
+.image_type_like
 {
     background-image: url(https://pp.userapi.com/c850132/v850132480/5d8b8/9ZuEEYr4UKA.jpg);
 }
 
-.Leya
+.image_type_leya
 {
     background-image: url(https://pp.userapi.com/c834202/v834202929/f6260/j1IQHNqemyQ.jpg);
 }
 
-.Klubnichka
+.image_type_klubnichka
 {
     background-image: url(https://pp.userapi.com/c850636/v850636753/1b222/AOcx69euRUw.jpg);
 }
 
-.Fanta
+.image_type_fanta
 {
     background-image: url(https://pp.userapi.com/c824601/v824601025/12b2b0/OAvXl7REasI.jpg);
 }
